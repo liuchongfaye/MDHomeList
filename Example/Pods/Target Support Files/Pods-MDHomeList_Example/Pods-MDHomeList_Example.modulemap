@@ -1,0 +1,6 @@
+framework module Pods_MDHomeList_Example {
+  umbrella header "Pods-MDHomeList_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,14 @@
 //
 
 #import "MDAppDelegate.h"
+@import MDHomeList;
 
 @implementation MDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     return YES;
 }
 

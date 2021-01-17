@@ -60,13 +60,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74483A176B7307B31DF159BD /* Pods-MDHomeList_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHomeList_Example.release.xcconfig"; path = "Target Support Files/Pods-MDHomeList_Example/Pods-MDHomeList_Example.release.xcconfig"; sourceTree = "<group>"; };
-		77A228DF942569F1A12FCCD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		77A228DF942569F1A12FCCD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		812544288EAC5F6C6D5433DE /* Pods-MDHomeList_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHomeList_Tests.release.xcconfig"; path = "Target Support Files/Pods-MDHomeList_Tests/Pods-MDHomeList_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8273244CA34489CD5C1277DB /* MDHomeList.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MDHomeList.podspec; path = ../MDHomeList.podspec; sourceTree = "<group>"; };
+		8273244CA34489CD5C1277DB /* MDHomeList.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MDHomeList.podspec; path = ../MDHomeList.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882389771BE5600CA6942001 /* Pods-MDHomeList_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDHomeList_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MDHomeList_Tests/Pods-MDHomeList_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B414EF334D1D9C4A4CE15A82 /* Pods_MDHomeList_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDHomeList_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7798DBC497BB49622EBF7E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E7798DBC497BB49622EBF7E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				882389771BE5600CA6942001 /* Pods-MDHomeList_Tests.debug.xcconfig */,
 				812544288EAC5F6C6D5433DE /* Pods-MDHomeList_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,11 +324,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MDHomeList_Example/Pods-MDHomeList_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/MDHomeList/MDHomeList.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDHomeList.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
