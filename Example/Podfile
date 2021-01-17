@@ -1,9 +1,16 @@
-use_frameworks!
 
 platform :ios, '9.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/liuchongfaye/MDSpecs.git'
+use_frameworks!
+
 target 'MDHomeList_Example' do
   pod 'MDHomeList', :path => '../'
+  
+  pod 'MDHud'
+  
+  pod 'AFNetworking'
   
   target 'MDHomeList_Tests' do
     inherit! :search_paths

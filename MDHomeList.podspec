@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MDHomeList'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '组件化开发首页列表'
 
 # This description is used to generate tags and improve search results.
@@ -44,5 +44,5 @@ TODO: Add long description of the pod here.
   s.dependency 'Masonry'
   
   # 私有库
-  #s.dependency 'MDHud'
+  s.dependency 'MDHud'
 end

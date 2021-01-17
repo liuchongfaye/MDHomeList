@@ -12,7 +12,7 @@
 
 //#import "VideoDetailViewController.h"
 
-//@import MDHud;
+@import MDHud;
 
 @interface ListTableViewController ()
 
@@ -25,9 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //[self showHudLoading];
+    [self showHudLoading];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        //[self hideHudLoading];
+        [self hideHudLoading];
         
         self.models = [NSMutableArray array];
         
