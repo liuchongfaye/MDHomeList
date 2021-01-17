@@ -15,6 +15,9 @@
 {
     // Override point for customization after application launch.
     
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ListTableViewController new]];
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 
