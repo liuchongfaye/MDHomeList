@@ -10,9 +10,8 @@
 #import "ListModel.h"
 #import "ListTableViewCell.h"
 
-//#import "VideoDetailViewController.h"
-
 @import MDHud;
+@import UserDetailCategory;
 
 @interface ListTableViewController ()
 
@@ -77,6 +76,19 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
     ListModel *model = self.models[indexPath.row];
+    
+    __weak typeof(model) weakModel = model;
+    __weak typeof(self) weakSelf = self;
+    
+    UIViewController *vc = [[CTMediator sharedInstance] userDetailWithID:model.ID count:model.count videoDetailPlayBlock:^(NSString * _Nonnull ID, NSString * _Nonnull count) {
+        
+        weakModel.count = count;
+        
+        [weakSelf.tableView reloadData];
+    }];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 //    VideoDetailViewController *vc = [VideoDetailViewController new];
 //    vc.ID = model.ID;
 //    vc.count = model.count;

@@ -9,8 +9,12 @@ target 'MDHomeList_Example' do
   pod 'MDHomeList', :path => '../'
   
   pod 'MDHud'
+  pod 'UserDetailCategory'
   
-  pod 'AFNetworking'
+  # 不添加依赖
+  pod 'UserDetail'
+  
+  #pod 'AFNetworking'
   
   target 'MDHomeList_Tests' do
     inherit! :search_paths
