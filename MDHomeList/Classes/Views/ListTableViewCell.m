@@ -19,7 +19,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.viewCountLabel = [UILabel new];
-        self.viewCountLabel.textColor = UIColor.greenColor;
+        self.viewCountLabel.textColor = UIColor.blueColor;
         [self.contentView addSubview:self.viewCountLabel];
         
         [self.viewCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
